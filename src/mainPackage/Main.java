@@ -6,29 +6,29 @@ public class Main {
     public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);
-        Oprations op = new Oprations();
+        Operations op = new Operations();
         System.out.println("welcome to java calculator(enter):");
         scan.nextLine();
         System.out.println("please enter an Operation(+,-,/,*):");
         String input = scan.nextLine();
-        switch (input)
-        {
-            case "+":
+        switch (input) {
+            case "+" -> {
                 System.out.println("+ pressed");
-                op.plusClass();
-                break;
-            case "-":
+                op.calculatorClass(input);
+            }
+            case "-" -> {
                 System.out.println("- pressed");
-                break;
-            case "/":
+                op.calculatorClass(input);
+            }
+            case "/" -> {
                 System.out.println("/ pressed");
-                break;
-            case "*":
+                op.calculatorClass(input);
+            }
+            case "*" -> {
                 System.out.println("* pressed");
-                break;
-            default:
-                System.out.println("wrong input!!!");
-
+                op.calculatorClass(input);
+            }
+            default -> System.out.println("wrong input!!!");
         }
     }
 }
