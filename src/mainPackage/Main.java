@@ -1,7 +1,7 @@
 package mainPackage;
 
 import java.util.Scanner;
-
+//creating a small calculator in @java
 public class Main {
     public static void main(String[] args)
     {
